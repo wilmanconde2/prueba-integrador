@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <title>Tu cuenta</title>
   </head>
   <body>
     <header class="main-header">
-      <input type="checkbox" id="menu" />
+      <input type="checkbox" id="menu">
 
       <nav class="nav-bar">
         <ul class="nav-bar__nav-list">
           <li class="nav-bar__nav-item">
-            <a href="../index.html}" class="nav-bar__nav-link">Inicio</a>
+            <a href="../index.html" class="nav-bar__nav-link">Inicio</a>
           </li>
           <li class="nav-bar__nav-item alta">
             <a href="#" class="nav-bar__nav-link alta">Alta</a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="./nosotros.html" class="nav-bar__nav-link">nosotros</a>
+            <a href="./nosotros.html" class="nav-bar__nav-link">Nosotros</a>
           </li>
           <li class="nav-bar__nav-item">
             <a href="./contacto.html" class="nav-bar__nav-link">Contacto</a>
@@ -35,14 +35,14 @@
 
       <div class="search-bar">
         <div class="search-bar__logo-container">
-          <img src="../img/logo-color-bg-transparent.svg" class="search-bar__logo-container__image" alt="logo" />
+          <img src="../img/logo-color-bg-transparent.svg" class="search-bar__logo-container__image" alt="logo">
         </div>
         <form action="#" class="search-bar__form-container">
           <label for="busqueda" class="search-bar__form-label">Toyland</label>
-          <input type="search" class="search-bar__form-search" id="busqueda" placeholder="¿Qué estás buscando?" />
-          <input type="submit" class="search-bar__form-submit" value="Buscar" />
+          <input type="search" class="search-bar__form-search" id="busqueda" placeholder="¿Qué estás buscando?">
+          <input type="submit" class="search-bar__form-submit" value="Buscar">
         </form>
-        <div class="search-bar__carrito-container"><img src="../img/cart.svg" alt="carrito" /></div>
+        <div class="search-bar__carrito-container"><img src="../img/cart.svg" alt="carrito"></div>
         <div class="menu-toogle">
           <label for="menu" class="menu-toogle__label">
             <span class="menu-toogle__top-bread"></span>
@@ -56,10 +56,10 @@
     <!-- main-header -->
 
     <!-- sección ingreso/cuenta -->
-    <section class="section-login">
+    <div class="section-login">
       <div class="section-login__info">
         <form action="http://localhost:8080/login" class="login" method="post" target="_blank">
-          <div><img src="../img/logo-color-bg-transparent.svg" alt="logo" /></div>
+          <div><img src="../img/logo-color-bg-transparent.svg" alt="logo"></div>
           <fieldset>
             <legend>Inicia sesión en Toyland</legend>
             <div class="section-login__login">
@@ -67,14 +67,14 @@
                 <div class="lbl-user">
                   <label for="user">Usuario</label>
                 </div>
-                <input name="user" type="text" placeholder="Usuario - Email - Teléfono" required />
+                <input id="user" name="user" type="text" placeholder="Usuario - Email - Teléfono" required>
               </div>
               <div>
                 <div class="pass">
                   <label for="password" class="lbl-pass">Contraseña</label>
                   <a href="#">¿Olvidaste tu contraseña?</a>
                 </div>
-                <input name="password" type="text" placeholder="Contraseña" required />
+                <input id="password" name="password" type="text" placeholder="Contraseña" required>
               </div>
               <div class="login__button">
                 <button>Enviar</button>
@@ -91,19 +91,19 @@
             <legend>Contáctenos</legend>
             <div class="contact2__name">
               <div><label for="name">Nombre: *</label></div>
-              <div><input type="text" name="name" placeholder="Nombre" required /></div>
+              <div><input type="text" id="name" name="name" placeholder="Nombre" required></div>
             </div>
             <div class="contact2__email">
               <div><label for="mail">Email: *</label></div>
-              <div><input type="email" name="mail" placeholder="Correo Electrónico" required /></div>
+              <div><input type="email" id="mail" name="mail" placeholder="Correo Electrónico" required></div>
             </div>
             <div class="contact2__subject">
               <div><label for="subject">Asunto: *</label></div>
-              <div><input type="text" name="subject" placeholder="Asunto" required /></div>
+              <div><input type="text" id="subject" name="subject" placeholder="Asunto" required></div>
             </div>
             <div class="contact2__message">
               <div><label for="message">Mensaje: *</label></div>
-              <div><textarea name="message" placeholder="Deseo saber más sobre..." required></textarea></div>
+              <div><textarea id="message" name="message" placeholder="Deseo saber más sobre..." required></textarea></div>
             </div>
             <div class="contact2__button">
               <button>Enviar</button>
@@ -111,37 +111,35 @@
           </fieldset>
         </form>
         <div class="section-contact-us__img contact3">
-          <img src="../img/buzz.webp" alt="buzz" />
+          <img src="../img/buzz.webp" alt="buzz">
         </div>
       </div>
       <!-- FIN FORMULARIO -->
-    </section>
+    </div>
 
     <!-- footer -->
     <footer>
       <div class="section-about-us__content footer-top">
         <p>Para servicio al cliente, por favor <a href="./contacto.html">contáctenos.</a></p>
         <div class="logo-cont">
-          <img src="../img/logo-color-bg-transparent.svg" class="logo" alt="logo" />
+          <img src="../img/logo-color-bg-transparent.svg" class="logo" alt="logo">
         </div>
         <div class="icon">
           <p class="icon__text">Síguenos</p>
           <div class="icon-cont">
             <a href="https://www.facebook.com/" class="icon__link" target="_blank"
               ><img src="../img/facebook.svg" alt="facebook"
-            /></a>
+          ></a>
             <a href="https://x.com/?lang=es" class="icon__link" target="_blank"
               ><img src="../img/x.svg" alt="Twitter"
-            /></a>
+          ></a>
             <a href="https://www.instagram.com/" class="icon__link" target="_blank"
               ><img src="../img/instagram.svg" alt="instagram"
-            /></a>
+          ></a>
             <a href="https://www.youtube.com/" class="icon__link" target="_blank"
               ><img src="../img/youtube.svg" alt="youtube"
-            /></a>
-            <a href="#" class="icon__link" class="icon__link" target="_blank"
-              ><img src="../img/location.svg" alt="ubicacion"
-            /></a>
+          ></a>
+            <a href="#" class="icon__link" target="_blank"><img src="../img/location.svg" alt="ubicacion"></a>
           </div>
         </div>
       </div>
