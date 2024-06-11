@@ -46,6 +46,7 @@
     display: block;
 
     &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+      // TODO // no funciona
       background-color: $color-third;
     }
   }
@@ -217,11 +218,10 @@
     img {
       width: 40px;
 
-      @media (min-width:576px) {
-        &{
+      @media (min-width: 576px) {
+        & {
           width: 50px;
         }
-        
       }
     }
   }
