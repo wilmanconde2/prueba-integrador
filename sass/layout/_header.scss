@@ -84,12 +84,11 @@
   }
 
   &__nav-link {
-    display: inline-block;
+    display: block;
     padding: 5px;
-    padding-inline: 10px;
     text-decoration: none;
     border-radius: 25px;
-    border: 2px solid $color-primary;
+    border: 1px solid $color-primary;
     background-color: $color-secondary;
     margin-inline: 1rem;
     color: whitesmoke;
