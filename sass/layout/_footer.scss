@@ -23,7 +23,6 @@
   }
 
   .icon {
-
     &__link > img {
       padding: 5px;
       width: 2.5rem;
@@ -33,6 +32,15 @@
     &__link > img:hover {
       background-color: rgba(23, 23, 233, 0.2);
       border-radius: 50%;
+    }
+    &__text {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &__cont {
+      display: flex;
+      justify-content: space-evenly;
     }
   }
 
