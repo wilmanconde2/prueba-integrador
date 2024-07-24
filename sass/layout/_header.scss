@@ -44,11 +44,6 @@
 
   &:checked + .nav-bar {
     display: block;
-
-    &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
-      // TODO // no funciona
-      background-color: $color-third;
-    }
   }
 }
 
